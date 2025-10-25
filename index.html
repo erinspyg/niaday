@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="bg-music" loop>
+  <source src="https://files.catbox.moe/1l7p9u.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<div class="container">
+  <!-- Slide 1 -->
+  <section class="slide active" id="slide-1">
+    <h1 class="title">Today is your day to sparkle! 🎀💖</h1>
+    <img src="cake.png" class="cake-img" alt="Cake">
+    <button class="next-btn" onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- Slide 2 -->
+  <section class="slide" id="slide-2">
+    <p class="message">
+      Every year that passes, I feel grateful that God placed us in the same family, making us not only cousins, but also companions in this journey of life. Thank you for always being there, sharing laughter and listening to every story, even the sad ones, without a single complaint. I hope that in this new age, every beautiful dream you have whispered in prayer comes true one by one. Your life deserves to be filled with pure love, light steps, and immeasurable happiness.
+    </p>
+    <div class="gallery">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+      <img src="img4.jpg">
+      <img src="img5.jpg">
+      <img src="img6.jpg">
+    </div>
+    <button class="next-btn" onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- Slide 3 -->
+  <section class="slide" id="slide-3">
+    <h2 class="final-text">Click the balloons for wishes 🎈💖</h2>
+    <div class="balloon-area"></div>
+    <div class="wish-box"><p id="wish-text"></p></div>
+    <button class="next-btn" onclick="endMessage()">Final</button>
+  </section>
+
+  <!-- Ending -->
+  <section class="slide" id="end">
+    <h1 class="ending">Thank you for letting me be part of your story 💗</h1>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
